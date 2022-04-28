@@ -1,0 +1,33 @@
+.sasha__loader{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+    flex-direction:column;
+    font-family:var(--font-family);
+    background:linear-gradient(180deg, rgba(255, 191, 191, 1) 72%, rgba(183, 253, 255, 1) 100%);
+    z-index:5;
+}
+.sasha__loader-name{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+.sasha__loader-name p{
+    padding:0 1rem;
+    font-size: 52px;
+    font-weight:800;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+}
+.sasha__loader-frontend{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.sasha__loader-frontend p{
+    padding:0 0.3rem;
+    font-size: 30px;
+}

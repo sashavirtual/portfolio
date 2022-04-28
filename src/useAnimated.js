@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-const useAnimated = () => {
+import React, { useEffect, useState } from "react";
+const useAnimated = ({ setIsLoaded }) => {
     useEffect(() => {
         const reveal = () => {
             let reveals = document.querySelectorAll('.reveal');
@@ -37,6 +37,13 @@ const useAnimated = () => {
         }
         window.addEventListener('scroll', revealOp)
         return () => window.removeEventListener('scroll', revealOp)
+    })
+    useEffect(() => {
+        const anotherOne = (event) => {
+            setIsLoaded(true)
+        }
+        window.addEventListener('load', anotherOne);
+        return () => window.removeEventListener('load', anotherOne)
     })
 }
 
