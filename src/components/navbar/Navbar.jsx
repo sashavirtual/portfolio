@@ -5,21 +5,21 @@ import logo from "../../assets/sasha0.png";
 const Menu = () => (
   <>
     <p><a href="#home">Home</a></p>
-    <p><a href="#wgpt3">Who am I?</a></p>
-    <p><a href="#features">Facing IT</a></p>
-    <p><a href="#possibility">Grounds for learning</a></p>
-    <p><a href="#blog">My portfolio</a></p>
+    <p><a href="#who-am-I">Who am I?</a></p>
+    <p><a href="#facing-IT">Facing IT</a></p>
+    <p><a href="#grounds-for-learning">Grounds for learning</a></p>
+    <p><a href="#have-a-look">Have a look...</a></p>
   </>
 )
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
+    <div className="sasha__navbar">
+      <div className="sasha__navbar-links">
+        <div className="sasha__navbar-links_logo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="gpt3__navbar-links_container">
+        <div className="sasha__navbar-links_container">
           <Menu />
         </div>
       </div>
@@ -27,14 +27,14 @@ const Navbar = () => {
         <p>Sign in</p>
         <button type="button">Sign up</button>
       </div> */}
-      <div className="gpt3__navbar-menu">
+      <div className="sasha__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color="#000" size={27} onClick={() => setToggleMenu(false)} />
           : <RiMenu3Line color="#000" size={27} onClick={() => setToggleMenu(true)} />
         }
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
-            <div className="gpt3__navbar-menu_container-links">
+          <div className="sasha__navbar-menu_container scale-up-center">
+            <div className="sasha__navbar-menu_container-links">
               <Menu />
               {/* <div className="gpt3__navbar-menu_container-links-sign">
                 <p>Sign in</p>

@@ -1,10 +1,10 @@
-.gpt3__header {
+.sasha__header {
   display: flex;
   margin-left: 0.8rem;
 }
-.gpt3__header-content {
+.sasha__header-content {
+  flex:1;
   min-height:100vh;
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -16,7 +16,6 @@
 @keyframes op{
   0%{
 opacity:0.6;
-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
 /* scale(ширина),rotate,параллелепипед,scale(высота),translX,translateY) */
   }
   100%{
@@ -24,86 +23,20 @@ transform: matrix(1.2, 0, 0, 1.2, 0, 0);
   }
 }
 
-.gpt3__header-content h1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-
-  font-style: normal;
+.sasha__header-content h1 {
   font-size: 62px;
   line-height: 75px;
-  letter-spacing: -0.04em;
+  font-weight:1200;
 }
-.gpt3__header-content p {
-  font-family: var(--font-family);
+.sasha__header-content p {
   font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 27px;
   color: var(--color-text);
   margin-top: 1.5rem;
 }
-.gpt3__header-content__input {
-  width: 100%;
-  margin: 2rem 0 1rem;
-  display: flex;
-}
-.gpt3__header-content__input input {
-  flex: 2;
-  width: 100%;
-  min-height: 50px;
-  background: var(--color-footer);
-  border-radius: 5px 0 0 5px;
-  font-family: var(--font-family);
-  font-size: 20px;
-  line-height: 27px;
-  color: #3d6184;
-  border: 2px solid var(--color-footer);
-  padding: 0 1rem;
-  outline: none;
-  color: rgb(67, 0, 0);
-}
-.gpt3__header-content__input button {
-  flex: 0.6;
-  width: 100%;
-  min-height: 50px;
-  background: #ff4820;
-  color: white;
 
-  font-family: var(--font-family);
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 27px;
-  cursor: pointer;
-  outline: none;
-  padding: 0 1rem;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: 0.2s;
-}
-.gpt3__header-content__input button:hover {
-  background-color: #ff6644;
-}
-.gpt3__header-content__people {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 2rem;
-}
-.gpt3__header-content__people img {
-  width: 181.79px;
-  height: 38px;
-}
-.gpt3__header-content__people p {
-  font-family: (--font-family);
-  margin: 0 0 0 1rem;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 38px;
-  color: rgb(41, 0, 0);
-  text-align: center;
-}
-.gpt3__header-image {
+.sasha__header-image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -122,59 +55,61 @@ transform: matrix(1.2, 0, 0, 1.2, 0, 0);
   }
   
 }
-.gpt3__header-image img {
+.sasha__header-image img {
   max-width: 100%;
   max-height: 100%;
-  min-height:330px;
+  aspect-ratio:1/1.23;
 }
 @media screen and (max-width: 1275px) {
-
-  .gpt3__header {
+  .sasha__header-image img {
+    min-height:630px;
+  }
+  .sasha__header {
     flex-direction: column-reverse;
   }
 
-  .gpt3__header-content {
-    margin: 0 0 3rem;
+  .sasha__header-content {
     min-height:0;
   }
 }
 @media screen and (max-width: 650px) {
-  .gpt3__header h1 {
+
+  .sasha__header h1 {
     font-size: 48px;
     line-height: 60px;
   }
-  .gpt3__header p {
+  .sasha__header p {
     font-size: 16px;
     line-height: 24px;
   }
-  .gpt3__header-content__people {
+  .sasha__header-content__people {
     flex-direction: column;
   }
-  .gpt3__header-content__people p {
+  .sasha__header-content__people p {
     margin: 0;
   }
-  .gpt3__header-content__input input,
-  .gpt3__header-content__input button {
+  .sasha__header-content__input input,
+  .sasha__header-content__input button {
     font-size: 16px;
     line-height: 24px;
     outline: none;
   }
 }
 @media screen and (max-width: 490px) {
-  .gpt3__header h1 {
+  .sasha__header h1 {
     font-size: 32px;
     line-height: 48px;
   }
-  .gpt3__header-content__people {
+  .sasha__header-content__people {
     flex-direction: column;
   }
 
-  .gpt3__header p {
+  .sasha__header p {
     font-size: 14px;
     line-height: 24px;
   }
-  .gpt3__header-content__input input,
-  .gpt3__header-content__input button {
+  .sasha__header-content__input input,
+  .sasha__header-content__input button {
     font-size: 12px;
     line-height: 16px;
   }

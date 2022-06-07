@@ -1,22 +1,22 @@
 import React from 'react'
 import { Article } from '../../components'
 import './blog.css'
-import { project1, project2, blog03, blog04, blog05 } from './imports'
+import { project1, project2, project3, codewars, github } from './imports'
 const Blog = () => {
   return (
-    <div className="gpt3__blog section__padding reveal" id="blog">
-      <div className="gpt3__blog-heading">
-        <h1 className='gradient__text'>Hear Ye. Here are my projects!</h1>
+    <div className="sasha__projects section__padding reveal" id="have-a-look">
+      <div className="sasha__projects-heading">
+        <h1 className='gradient__text'>I want you to have a look at...</h1>
       </div>
-      <div className='gpt3__blog-container'>
-        <div className="gpt3__blog-container_groupA">
-          <Article imgUrl={project1} website="https://sashavirtual.github.io/hangman__game/" title="Hangman" description="Test yourself in your vocabulary!" />
+      <div className='sasha__projects-container'>
+        <div className="sasha__projects-container_groupA">
+          <Article imgUrl={project1} website="https://sashavirtual.github.io/hangman__game/" title="Hangman" description="Fully responsive hangman web application" />
         </div>
-        <div className="gpt3__blog-container_groupB">
-          <Article imgUrl={project2} website="https://sashavirtual.github.io/CardGame/" title="Card Game" description="Find a pair and train your memory!" />
-          <Article imgUrl={blog03} date="Mar 26,2022" title="Cillum nulla non quis magna non proident labore." />
-          <Article imgUrl={blog04} date="Mar 26,2022" title="Cupidatat duis adipisicing non proident elit" />
-          <Article imgUrl={blog05} date="Mar 26,2022" title="Ut aute eiusmod ullamco fugiat ut ut velit sunt dolor." />
+        <div className="sasha__projects-container_groupB">
+          <Article imgUrl={project2} website="https://sashavirtual.github.io/CardGame/" title="Card Game" description="A memory training game. Children approved!" />
+          <Article imgUrl={project3} website="https://sashavirtual.github.io/checkers/" title="Checkers" description="A game using difficult algorithms to be accomplished" />
+          <Article imgUrl={codewars} website="https://www.codewars.com/users/Aleksandr%20Semenikhin" title="Codewars Profile" description="Web-site proving my JavaScript skills" />
+          <Article imgUrl={github} website="https://github.com/sashavirtual?tab=repositories" title="GitHub repositories" description="Here's my GitHub profile with all applications codes available" />
         </div>
       </div>
     </div>

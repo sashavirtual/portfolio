@@ -1,0 +1,66 @@
+.sasha__grounds {
+  display: flex;
+  flex-direction: row;
+  margin-top:2rem;
+}
+.sasha__grounds-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+}
+.sasha__grounds-image img {
+  flex: 0.5;
+  height: 100%;
+  width: 100%;
+}
+.sasha__grounds-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sasha__grounds-content h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 30px;
+  color: #72e5ff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sasha__grounds-content h4:hover {
+  font-size: 18px;
+}
+.sasha__grounds-content h4:last-child {
+  color: #ff8a71;
+}
+.sasha__grounds-content h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 45px;
+  margin: 1rem 0;
+}
+.sasha__grounds-content p {
+  text-align:justify;
+  margin-right:1rem;
+  font-family: var(--font-family);
+  font-size: 23px;
+  line-height: 30px;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 950px) {
+  .sasha__grounds {
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+  .sasha__grounds-image {
+    margin: 1rem 1rem;
+  }
+  .sasha__grounds-content {
+    margin: 2rem 1rem;
+  }
+}
