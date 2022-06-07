@@ -73,7 +73,9 @@ opacity:0.6;
   }
 }
 @media screen and (max-width: 650px) {
-
+  .sasha__header-image img {
+    min-height:330px;
+  }
   .sasha__header h1 {
     font-size: 48px;
     line-height: 60px;
