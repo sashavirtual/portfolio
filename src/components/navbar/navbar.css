@@ -1,5 +1,4 @@
 .sasha__navbar {
-  z-index:5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +81,7 @@ width:120px;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-
+  z-index:100;
   text-align: end;
   background: var(--color-footer);
   padding: 2rem;

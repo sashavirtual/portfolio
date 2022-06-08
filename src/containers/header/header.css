@@ -1,6 +1,7 @@
 .sasha__header {
   display: flex;
   margin-left: 0.8rem;
+  z-index:0;
 }
 .sasha__header-content {
   flex:1;
